@@ -1,0 +1,86 @@
+.meniu-show
+{
+  position: absolute !important;
+  width: 100%;
+  background-color: rgb(0, 0, 0,0.8);
+      left: 0px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      z-index: 2;
+
+      height: 100vh;
+      overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+      transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.meniu-content
+{
+
+  background-image: url('site-img/backround-meniu.jpg');
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  background-position: center center;
+width: 70%;
+height: 100%;
+
+}
+.meniu-hide
+{
+  position: fixed;
+      
+      left: -50%; /* Initially hide the menu off-screen */
+      width: 50%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+      overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+      transition: left 0.3s ease;
+      z-index: 1;
+}
+.controls-x
+{
+  color: white !important;
+  background-color: rgba(251,237,218, 0.4);
+  border-radius: 10%;
+  &:hover{
+    background-color: rgb(255, 0, 0);
+  }
+}
+.btn-meniu 
+{
+  border-top-style:solid !important;
+  
+  
+  border-top: 2px;
+  border-color: rgb(78,113,30);
+  background-color:rgba(78,113,30, 0.15) ;
+  margin: 0;
+  -webkit-text-stroke: 0.5px black;
+  width:100%;
+  color: rgb(144,204,62);
+  transition: all 0.5s;
+  &:active{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+.btn-meniu1
+{
+  border-top-style:solid !important;
+  border-bottom-style: solid !important;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-color: rgb(78,113,30);
+  background-color:rgba(78,113,30, 0.15) ;
+  margin: 0;
+  -webkit-text-stroke: 0.5px black;
+  width:100%;
+  color: rgb(144,204,62);
+  transition: all 0.5s;
+  &:active{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+}
+.when-menuActive
+{
+  overflow-y: hidden;
+}
