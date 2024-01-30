@@ -1,0 +1,55 @@
+.location-container
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: rgb(251,237,218);
+}
+.locatie-google
+{
+  border-radius: 1rem;
+  box-shadow: 0px 10px 15px 20px rgba(0, 0, 0,0.21);
+  width: 70%;
+  height: 60vh;
+}
+.titlu-locatie-container
+{
+  
+  padding-top:10px ;
+  border-top: 2px solid;
+  height: 20%;
+  border-color: rgb(0, 187, 255) ;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  align-content: center;
+  padding-right: 4%;
+  padding-left: 2%;
+  margin-bottom: 2rem;
+  
+}
+.arrow
+{
+  width: 10vh;
+  height: auto;
+}
+.locatie-text
+{
+  font-size: larger;
+}
+
+@media screen and (max-width: 600px)
+{
+  .location-container
+  {
+    height: 90vh;
+  }
+  .titlu-locatie-container
+  {
+    padding-left: 0;
+  }
+}

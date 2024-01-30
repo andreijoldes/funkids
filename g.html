@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Gallery</title>
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Special Elite', cursive;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+.gallery{ 
+  margin-top: 5%;
+  padding-top: 60px; 
+  text-align: center;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.image-container {
+  width: 100%;
+  text-align: center;
+}
+
+#myModal {
+  z-index: 101;
+}
+
+.scrollable-images {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10px;
+  transition: 700ms cubic-bezier(0.075, 0.02, 0.165, 1);
+  transform-origin: center;
+}
+
+.scrollable-images::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-images img {
+  width: 80px;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  filter: grayscale(100%);
+}
+
+.scrollable-images img:hover {
+  filter: grayscale(0%);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background-size: contain;
+  margin: auto;
+  display: block;
+  width: auto;
+  height: auto;
+}
+#caption {
+  margin: auto;
+  display: block;
+  font-family: 'Hubballi', sans-serif;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@media screen and (max-width:768px) {
+    .modal-content {
+      margin-top: 20%;
+      width: 100%;
+    }
+}
+@media (min-width: 769px) {
+  .modal-content {
+    /*max-width: none; */
+    max-height: 100%; 
+    width: auto; 
+  }
+}
+
+    </style>
+</head>
+<body id="dark-mode">
+<div class="container-fluid gallery" id="gallery">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 dark-mode-word">
+        <h1>Through the Lens</h1>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  <div class="centered-container">
+    <div class="image-container">
+      <div class="scrollable-images">
+          <img src="https://images.squarespace-cdn.com/content/v1/58f8da6cd1758e3d9a000926/1590933405095-CS76QNG50PO0P07SE711/Hasselblad+Xpan+Cinestill+Portra-7.jpg" alt="Caption here" >
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/night_city.jpg" alt="Caption here" >
+		  <img src="https://c4.wallpaperflare.com/wallpaper/114/1008/41/one-piece-monkey-d-luffy-hd-wallpaper-preview.jpg" alt="Zoro">
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/Kollam_beach_1.webp" alt="Caption here">
+          <img src="https://images.squarespace-cdn.com/content/v1/58f8da6cd1758e3d9a000926/1590933647894-1QSII5LVB2ACDVC28FVK/Hasselblad+Xpan+Cinestill+Portra-42.jpg?format=1500w" alt="Caption here" >
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/Clouds_river_atirapalley.webp" alt="Caption here" >
+          <img src="https://images.squarespace-cdn.com/content/v1/58f8da6cd1758e3d9a000926/1590933228672-9I1VDOZ5Z6E4TMOVIDQO/Hasselblad+Xpan+Cinestill+Portra-2.jpg?format=1500w" alt="Caption here" >
+          <img src="https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg" alt="Northern Lights, Norway">
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/night_city.jpg" alt="Caption here" >
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/Kollam_beach_1.webp" alt="Caption here">
+          <img src="https://images.squarespace-cdn.com/content/v1/58f8da6cd1758e3d9a000926/1590933647894-1QSII5LVB2ACDVC28FVK/Hasselblad+Xpan+Cinestill+Portra-42.jpg?format=1500w" alt="Caption here" >
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/Clouds_river_atirapalley.webp" alt="Caption here" >
+          <img src="https://c4.wallpaperflare.com/wallpaper/114/1008/41/one-piece-monkey-d-luffy-hd-wallpaper-preview.jpg" alt="Zoro">
+          <img src="https://images.squarespace-cdn.com/content/v1/58f8da6cd1758e3d9a000926/1590933405095-CS76QNG50PO0P07SE711/Hasselblad+Xpan+Cinestill+Portra-7.jpg" alt="Caption here" >
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/night_city.jpg" alt="Caption here" >
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/Kollam_beach_1.webp" alt="Caption here">
+          <img src="https://images.squarespace-cdn.com/content/v1/58f8da6cd1758e3d9a000926/1590933647894-1QSII5LVB2ACDVC28FVK/Hasselblad+Xpan+Cinestill+Portra-42.jpg?format=1500w" alt="Caption here" >
+          <img src="https://shreyas-phaniraj-ebcf30.netlify.app/gallery/Clouds_river_atirapalley.webp" alt="Caption here" >
+		  <img src="https://c4.wallpaperflare.com/wallpaper/114/1008/41/one-piece-monkey-d-luffy-hd-wallpaper-preview.jpg" alt="Zoro">
+          <img src="https://images.squarespace-cdn.com/content/v1/58f8da6cd1758e3d9a000926/1590933228672-9I1VDOZ5Z6E4TMOVIDQO/Hasselblad+Xpan+Cinestill+Portra-2.jpg?format=1500w" alt="Caption here" >
+	  </div>
+    </div>
+  </div>
+  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+  
+    <!-- Custom JS -->
+    <script>
+      var today= new Date();
+var bg = document.getElementById("dark-mode");
+var words = document.getElementsByClassName("dark-mode-word");
+
+if(today.getHours() > 17 || today.getHours() < 7){
+	console.log("Night time, Dark mode");
+	bg.style.backgroundColor = "#34495E";
+	for (let word of words){
+		word.style.color = "white";
+	}
+}
+
+//-----------------------------Image gallery fn's ----------------------
+var imagesContainer = document.querySelector('.scrollable-images');
+var images = document.querySelectorAll('.scrollable-images img');
+var modal = document.getElementById('myModal');
+var modalImg = document.getElementById('modalImage');
+var captionText = document.getElementById('caption');
+
+var scrollPosition = 0;
+var imageIndex = 0; 
+function openModal(src, alt) {
+  modal.style.display = 'block';
+  modalImg.src = src;
+  captionText.innerHTML = alt;
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+images.forEach(function (img, index) {
+  img.onload = function () { 
+    updateImagePositions(); 
+  };
+
+  img.onclick = function () {
+    openModal(this.src, this.alt);
+    imageIndex = index;
+  };
+});
+
+imagesContainer.addEventListener('wheel', function (e) {
+  scrollPosition += e.deltaY;
+  scrollPosition = Math.min(imagesContainer.scrollWidth - imagesContainer.clientWidth, Math.max(0, scrollPosition));
+  imagesContainer.scrollLeft = scrollPosition;
+  imageIndex = Math.round(scrollPosition / images[0].offsetWidth);
+  e.preventDefault();
+});
+
+imagesContainer.addEventListener('mousewheel', function (e) {
+  scrollPosition += e.deltaY;
+  scrollPosition = Math.min(imagesContainer.scrollWidth - imagesContainer.clientWidth, Math.max(0, scrollPosition));
+  imagesContainer.scrollLeft = scrollPosition;
+  imageIndex = Math.round(scrollPosition / images[0].offsetWidth);
+  e.preventDefault();
+});
+
+window.addEventListener('resize', updateImagePositions);
+
+function updateImagePositions() {
+  const centerIndex = Math.floor(images.length / 2);
+  scrollPosition = centerIndex * images[0].offsetWidth - imagesContainer.offsetWidth / 2;
+  scrollPosition = Math.min(imagesContainer.scrollWidth - imagesContainer.clientWidth, Math.max(0, scrollPosition));
+  imagesContainer.scrollLeft = scrollPosition;
+  imageIndex = centerIndex;
+}
+updateImagePositions();
+
+const dockContainer = document.querySelector('.scrollable-images');
+const dockItems = document.querySelectorAll('.scrollable-images img');
+const defaultItemScale = 1;
+const hoverItemScale = 1.3; 
+const defaultMargin = "5px";
+const expandMargin = "10px";
+
+const updateDockItems = (hoveredItemIndex) => {
+  dockItems.forEach((item, index) => {
+    let scale = defaultItemScale;
+    let margin = defaultMargin;
+
+    if (index === hoveredItemIndex) {
+      scale = hoverItemScale;
+      margin = expandMargin;
+    } 
+
+    item.style.transform = `scale(${scale})`;
+    item.style.margin = `0 ${margin}`;
+  });
+};
+dockItems.forEach((item, index) => {
+  item.addEventListener("mouseenter", () => {
+    updateDockItems(index);
+  });
+});
+dockContainer.addEventListener("mouseleave", () => {
+  resetDockItems();
+});
+const resetDockItems = () => {
+  dockItems.forEach((item) => {
+    item.style.transform = "";
+    item.style.margin = "";
+  });
+};
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 27) {
+    closeModal(); 
+  }
+});
+    </script>
+   
+  </body>
+</html>

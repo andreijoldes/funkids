@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .gallery-container {
+      display: flex;
+      overflow: hidden;
+    }
+
+    .gallery {
+      display: flex;
+      animation: galleryScroll 10s linear infinite; /* Adjust the animation duration as needed */
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    @keyframes galleryScroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  <title>Looping Gallery</title>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="home/site-img/imagescroll.jpg" alt="Image 1">
+      <img src="home/site-img/imagescroll1.jpg" alt="Image 2">
+      <img src="home/site-img/imagescroll.jpg" alt="Image 3">
+      <img src="home/site-img/imagescroll1.jpg" alt="Image 1">
+      <img src="home/site-img/imagescroll.jpg" alt="Image 2">
+      <img src="home/site-img/imagescroll1.jpg" alt="Image 3">
+     
+      <!-- Add more duplicated images as needed -->
+    </div>
+  </div>
+</body>
+</html>
