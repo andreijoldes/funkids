@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="home/header.css" />
+    <link rel="stylesheet" href="home/footer.css" />
+    <link rel="stylesheet" href="home/sectiun-detalii.css" />
+    <link rel="stylesheet" href="home/meniu.css" />
+    <link rel="stylesheet" href="home/google-maps.css" />
+    <link rel="stylesheet" href="home/container1.css" />
+    <link rel="stylesheet" href="home/loading.css" />
+    <link rel="stylesheet" href="home/scroll-container.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <title>FunKids</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EH1E10383J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EH1E10383J');
+</script>
+    <style></style>
+  </head>
+
+  <body class="when-menuActive" id="body">
+    <div id="loading-screen">
+      <div id="loading-spinner"></div>
+  </div>
+ 
+    <script
+      src="https://my.hellobar.com/c2604f82ab1b9c884a86ef0dbb0b54bb8d6ef86c.js"
+      type="text/javascript"
+      charset="utf-8"
+      async="async"
+    ></script>
+
+
+
+    <div class="meniu-hide" id="meniu-id" for="menu-toggle">
+      <div class="meniu-content">
+        <button class="controls-x" onclick="classChangeBack()">&#10005;</button>
+        <div class="meniu-btn-meniu">
+
+          <button class="btn-meniu" onclick="
+          window.location='./contact.html'; ">&#9783; Meniu cafenea</button>
+
+          <button class="btn-meniu" onclick="
+          window.location='./servicii.html'; ">&#10082; Evenimente</button>
+
+          <button class="btn-meniu" onclick="window.location='./site.html#locationContainer'; scrollToTarget(); classChangeBack();"> 
+            <i class="fas fa-map-marked-alt"></i> Locatie</button>
+
+          <button class="btn-meniu1" onclick="
+          window.location='./contact.html';"><b style="color:black">&#9743; Contacteaza-ne</b></button>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex-header" id="header">
+      <div class="part0-header" onclick="classChange()">
+        <img class="retele-logo hamburger-menu" src="home/site-img/hamburger-menu.webp" />
+      </div>
+      <div class="part1-header">
+        <img class="logo-img1"  src="site-img/logocafeneascurt.png" />
+        <img class="logo-img2" src="site-img/logocafenealung.png">
+      </div>
+      <div class="part2-header">
+
+        <button class="header-button" onclick="
+            window.location='./servicii.html';">
+         Acasă
+        </button>
+
+        <button class="header-button" style="background-color: rgba(170, 170, 170, 0.513);">
+          Contactează-ne
+        </button>
+
+
+        <button class="header-button" onclick="
+                 window.location='./servicii.html';">
+            Locație
+        </button>
+      </div>
+
+      <div class="part3-header">
+        <a class="button-retele"
+          ><img class="retele-logo" src="home/logo/facebook-logo.webp"
+        /></a>
+        <a class="button-retele"
+          ><img class="retele-logo" src="home/logo/insta-logo.webp"
+        /></a>
+        <a class="button-retele"
+          ><img class="retele-logo" src="home/logo/tiktok-logo.webp"
+        /></a>
+      </div>
+    </div>
+   
+
+   
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="home/scrollcontainer.js"></script>
+    <script src="home/meniu-telefon.js"></script>
+    <script src="home/header.js"></script>
+    <script src="home/scrolluptomap.js"></script>
+    <script src="home/loading.js"></script>
+  </body>
+</html>

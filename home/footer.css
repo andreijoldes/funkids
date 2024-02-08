@@ -32,5 +32,13 @@ transition-duration: 0.3s;
 }
 .text-center
 {
-  background-color:rgb(208, 255, 254)
+  background-color:#87b8c0c4;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius:  2rem;
+}
+.sectiune-detalii-footer {
+  color:black !important;
+}
+.container{
+  background-color: transparent;
 }

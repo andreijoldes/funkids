@@ -12,6 +12,7 @@ function classChange() {
     body.classList.add("when-menuActive");
     meniu.classList.add("meniu-show");
     meniu.classList.remove("meniu-hide");
+    
   }
 }
 

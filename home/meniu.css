@@ -16,7 +16,7 @@
 .meniu-content
 {
 
-  
+ 
   background-color: rgb(251,237,218);
   background-position: center center;
 width: 70%;
@@ -37,6 +37,7 @@ height: 200vh;
 }
 .controls-x
 {
+  margin:3px;
   color: white !important;
   background-color: rgba(0, 0, 0, 0.396);
   border-radius: 10%;
@@ -50,8 +51,8 @@ height: 200vh;
   
   
   border-top: 2px;
-  border-color: rgb(78,113,30);
-  background-color:rgba(78,113,30, 0.15) ;
+  border-color: rgba(78, 113, 30, 0);
+  background-color:rgba(0, 0, 0, 0.175) ;
   margin: 0;
   
   width:100%;
@@ -67,10 +68,9 @@ height: 200vh;
   border-bottom-style: solid !important;
   border-top: 2px;
   border-bottom: 2px;
-  border-color: rgb(0, 0, 0);
-  background-color:rgba(78,113,30, 0.15) ;
+  border-color: rgba(0, 0, 0, 0.132);
+  background-color:rgba(0, 0, 0, 0.175) ;
   margin: 0;
-  
   width:100%;
   color: rgb(0, 187, 255);
   transition: all 0.5s;
@@ -82,4 +82,8 @@ height: 200vh;
 .when-menuActive
 {
   overflow-y: hidden;
+}
+.meniu-btn-meniu
+{
+  margin-top:10px;
 }

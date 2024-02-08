@@ -8,6 +8,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 50vw;
   height: 500px;
 }
